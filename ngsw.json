@@ -1,7 +1,7 @@
 {
   "configVersion": 1,
-  "timestamp": 1782880110427,
-  "index": "/index.html",
+  "timestamp": 1782880569069,
+  "index": "https://p1xt.github.io/five-minute-workout/index.html",
   "assetGroups": [
     {
       "name": "app",
@@ -11,21 +11,21 @@
         "ignoreVary": true
       },
       "urls": [
-        "/chunk-5HAVDZF2.js",
-        "/chunk-7ZYHPSJR.js",
-        "/chunk-GGZ4GWYJ.js",
-        "/chunk-HX6RVVVW.js",
-        "/chunk-IVG2GFYJ.js",
-        "/chunk-M365PXBT.js",
-        "/chunk-PCVOKSCA.js",
-        "/chunk-SMWKIARX.js",
-        "/chunk-TDGJEC7I.js",
-        "/chunk-VC6BBHZC.js",
-        "/index.html",
-        "/main-JMYNSGD2.js",
-        "/manifest.webmanifest",
-        "/polyfills-5CFQRCPP.js",
-        "/styles-HAQXODW2.css"
+        "https://p1xt.github.io/five-minute-workout/chunk-5HAVDZF2.js",
+        "https://p1xt.github.io/five-minute-workout/chunk-7ZYHPSJR.js",
+        "https://p1xt.github.io/five-minute-workout/chunk-GGZ4GWYJ.js",
+        "https://p1xt.github.io/five-minute-workout/chunk-HX6RVVVW.js",
+        "https://p1xt.github.io/five-minute-workout/chunk-IVG2GFYJ.js",
+        "https://p1xt.github.io/five-minute-workout/chunk-M365PXBT.js",
+        "https://p1xt.github.io/five-minute-workout/chunk-PCVOKSCA.js",
+        "https://p1xt.github.io/five-minute-workout/chunk-SMWKIARX.js",
+        "https://p1xt.github.io/five-minute-workout/chunk-TDGJEC7I.js",
+        "https://p1xt.github.io/five-minute-workout/chunk-VC6BBHZC.js",
+        "https://p1xt.github.io/five-minute-workout/index.html",
+        "https://p1xt.github.io/five-minute-workout/main-JMYNSGD2.js",
+        "https://p1xt.github.io/five-minute-workout/manifest.webmanifest",
+        "https://p1xt.github.io/five-minute-workout/polyfills-5CFQRCPP.js",
+        "https://p1xt.github.io/five-minute-workout/styles-HAQXODW2.css"
       ],
       "patterns": []
     },
@@ -37,31 +37,31 @@
         "ignoreVary": true
       },
       "urls": [
-        "/assets/icon.svg",
-        "/assets/workout_plans_updated.json"
+        "https://p1xt.github.io/five-minute-workout/assets/icon.svg",
+        "https://p1xt.github.io/five-minute-workout/assets/workout_plans_updated.json"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "/assets/icon.svg": "c859561c337f7ca5b28ac027839d6e5c6db5cd37",
-    "/assets/workout_plans_updated.json": "f47a945d42453837d8c40fced0ed3acbb5134842",
-    "/chunk-5HAVDZF2.js": "4a7a2052edddd6e2d85ae3330c556a60c2ec8515",
-    "/chunk-7ZYHPSJR.js": "6e875b44fe157dea0234a92a68b2d3b9d13b9eb3",
-    "/chunk-GGZ4GWYJ.js": "e94fe158616a899c5642370689bdad911b358827",
-    "/chunk-HX6RVVVW.js": "abc414525e8c21b62b908a43a524a377edb151d6",
-    "/chunk-IVG2GFYJ.js": "ab423c2fc38838df11a1477f538b987851b1bd2e",
-    "/chunk-M365PXBT.js": "cdbc74500e1c6d778a323fddf820cc1021cc5615",
-    "/chunk-PCVOKSCA.js": "9a99e460966445544edff004f8685f1fc5aa4fc7",
-    "/chunk-SMWKIARX.js": "fe9daf78248c8d1570305e478acd910ed391c090",
-    "/chunk-TDGJEC7I.js": "78274a64ffef0addff442f1cc0350edafc57e795",
-    "/chunk-VC6BBHZC.js": "c13feb6b82829230bc72d6a1f0cfb67efce84861",
-    "/index.html": "2cddb8b4b5d7bfdfe754b2a46a70208f54d8c094",
-    "/main-JMYNSGD2.js": "9b8b38b9f1b8a38c16502ee7289c4fcccf6902f3",
-    "/manifest.webmanifest": "06aea7d454bae4a9ba2580d1039d5dbaa1674a7b",
-    "/polyfills-5CFQRCPP.js": "f2241e9a25858f895ce299d15f6f22e849e2fd72",
-    "/styles-HAQXODW2.css": "931c6b4745894aeb7558c14de1800e4e33e50a67"
+    "https://p1xt.github.io/five-minute-workout/assets/icon.svg": "c859561c337f7ca5b28ac027839d6e5c6db5cd37",
+    "https://p1xt.github.io/five-minute-workout/assets/workout_plans_updated.json": "f47a945d42453837d8c40fced0ed3acbb5134842",
+    "https://p1xt.github.io/five-minute-workout/chunk-5HAVDZF2.js": "4a7a2052edddd6e2d85ae3330c556a60c2ec8515",
+    "https://p1xt.github.io/five-minute-workout/chunk-7ZYHPSJR.js": "6e875b44fe157dea0234a92a68b2d3b9d13b9eb3",
+    "https://p1xt.github.io/five-minute-workout/chunk-GGZ4GWYJ.js": "e94fe158616a899c5642370689bdad911b358827",
+    "https://p1xt.github.io/five-minute-workout/chunk-HX6RVVVW.js": "abc414525e8c21b62b908a43a524a377edb151d6",
+    "https://p1xt.github.io/five-minute-workout/chunk-IVG2GFYJ.js": "ab423c2fc38838df11a1477f538b987851b1bd2e",
+    "https://p1xt.github.io/five-minute-workout/chunk-M365PXBT.js": "cdbc74500e1c6d778a323fddf820cc1021cc5615",
+    "https://p1xt.github.io/five-minute-workout/chunk-PCVOKSCA.js": "9a99e460966445544edff004f8685f1fc5aa4fc7",
+    "https://p1xt.github.io/five-minute-workout/chunk-SMWKIARX.js": "fe9daf78248c8d1570305e478acd910ed391c090",
+    "https://p1xt.github.io/five-minute-workout/chunk-TDGJEC7I.js": "78274a64ffef0addff442f1cc0350edafc57e795",
+    "https://p1xt.github.io/five-minute-workout/chunk-VC6BBHZC.js": "c13feb6b82829230bc72d6a1f0cfb67efce84861",
+    "https://p1xt.github.io/five-minute-workout/index.html": "9a8dc1b3d0d6f7f7da01fc4c539d7c8e1b9e08ae",
+    "https://p1xt.github.io/five-minute-workout/main-JMYNSGD2.js": "9b8b38b9f1b8a38c16502ee7289c4fcccf6902f3",
+    "https://p1xt.github.io/five-minute-workout/manifest.webmanifest": "06aea7d454bae4a9ba2580d1039d5dbaa1674a7b",
+    "https://p1xt.github.io/five-minute-workout/polyfills-5CFQRCPP.js": "f2241e9a25858f895ce299d15f6f22e849e2fd72",
+    "https://p1xt.github.io/five-minute-workout/styles-HAQXODW2.css": "931c6b4745894aeb7558c14de1800e4e33e50a67"
   },
   "navigationUrls": [
     {
