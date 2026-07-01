@@ -1,0 +1,39 @@
+<section class="page-heading compact">
+  <p class="eyebrow">Progress</p>
+  <h1>Workout metrics</h1>
+</section>
+
+@if (summary) {
+  <section class="metric-grid">
+    <article>
+      <span>Today</span><strong>{{ summary.today }}</strong>
+    </article>
+    <article>
+      <span>This week</span><strong>{{ summary.week }}</strong>
+    </article>
+    <article>
+      <span>This month</span><strong>{{ summary.month }}</strong>
+    </article>
+    <article>
+      <span>Total</span><strong>{{ summary.total }}</strong>
+    </article>
+  </section>
+}
+
+@if (summary) {
+  <section class="trend-panel">
+    <h2>Category trends</h2>
+    @if (summary.categoryTrends.length === 0) {
+      <p class="muted">Complete a workout to start building trends.</p>
+    }
+    @for (trend of summary.categoryTrends; track trend) {
+      <div class="trend-row">
+        <span>{{ trend.category }}</span>
+        <div class="bar-track">
+          <div class="bar" [style.width.%]="width(trend.count)"></div>
+        </div>
+        <strong>{{ trend.count }}</strong>
+      </div>
+    }
+  </section>
+}

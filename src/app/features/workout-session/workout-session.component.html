@@ -1,0 +1,51 @@
+@if (!workout) {
+  <section class="empty-state">
+    <h1>Workout not found</h1>
+    <a class="primary as-link" routerLink="/randomizer">Back to Randomizer</a>
+  </section>
+}
+
+@if (workout) {
+  <section class="session-layout">
+    <div class="session-main">
+      <p class="eyebrow">{{ workout.planName }}</p>
+      <h1>{{ workout.title }}</h1>
+      <p class="pill">{{ workout.category }}</p>
+      <p>{{ workout.description }}</p>
+      <ol class="exercise-list">
+        @for (exercise of workout.exercises; track exercise) {
+          <li>
+            <strong>{{ exercise.name }}</strong>
+            <span>{{ exercise.target }}</span>
+            <p>{{ exercise.instruction }}</p>
+          </li>
+        }
+      </ol>
+    </div>
+    <aside class="notes-panel">
+      <h2>Workout Notes</h2>
+      @if (lastCompletion) {
+        <p class="muted">
+          Last completed {{ lastCompletion.completedAt | date: "mediumDate" }}.
+        </p>
+      }
+      <textarea
+        [(ngModel)]="notes"
+        rows="10"
+        placeholder="Weights, reps, adjustments, or reminders for next time"
+      ></textarea>
+      <fmw-timer></fmw-timer>
+      <div class="button-row">
+        <button type="button" (click)="saveNotes()">Save Notes</button>
+        <button
+          class="primary"
+          type="button"
+          [disabled]="saving"
+          (click)="complete()"
+        >
+          Complete Workout
+        </button>
+      </div>
+    </aside>
+  </section>
+}

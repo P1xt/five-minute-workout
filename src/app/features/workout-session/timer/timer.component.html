@@ -1,0 +1,45 @@
+<div class="timer">
+  <div class="timer__progress-shell">
+    <div
+      class="timer__progress-fill"
+      [style.width.%]="progress"
+      [style.background]="barColor"
+    ></div>
+
+    <div
+      class="timer__face"
+      [class.timer__face--pulse]="progress > 90 && !done"
+    >
+      @if (!done) {
+        <div class="timer__label">
+          {{ paused ? "Paused" : "Movement Break" }}
+        </div>
+        <div class="timer__time">
+          {{ timeRemaining }}
+        </div>
+      }
+
+      @if (done) {
+        <div class="timer__done">✓ Done</div>
+      }
+    </div>
+  </div>
+
+  <div class="timer__controls">
+    @if (!running && !paused) {
+      <button class="timer__button" (click)="start()">Start</button>
+    }
+
+    @if (running) {
+      <button class="timer__button" (click)="pause()">Pause</button>
+    }
+
+    @if (paused) {
+      <button class="timer__button" (click)="resume()">Resume</button>
+    }
+
+    <button class="timer__button timer__button--reset" (click)="reset()">
+      Reset
+    </button>
+  </div>
+</div>

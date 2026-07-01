@@ -1,0 +1,54 @@
+<section class="page-heading compact">
+  <p class="eyebrow">Settings</p>
+  <h1>Local data and appearance</h1>
+</section>
+
+@if (settings) {
+  <section class="settings-grid">
+    <article class="settings-panel">
+      <h2>Theme</h2>
+      <p class="muted">
+        Choose a Material-style light or dark interface for this device.
+      </p>
+      <div class="segmented-control" role="group" aria-label="Theme mode">
+        @for (mode of themeModes; track mode) {
+          <button
+            type="button"
+            [class.active]="settings.themeMode === mode"
+            (click)="settings.themeMode = mode; saveTheme()"
+          >
+            {{ mode | titlecase }}
+          </button>
+        }
+      </div>
+    </article>
+    <article class="settings-panel">
+      <h2>Backup</h2>
+      <button class="primary" type="button" (click)="exportBackup()">
+        Export Backup
+      </button>
+      <label for="importMode">Import mode</label>
+      <select id="importMode" [(ngModel)]="importMode">
+        <option value="merge">Merge with this device</option>
+        <option value="replace">Replace this device</option>
+      </select>
+      <label class="file-button" for="backupFile">Import Backup</label>
+      <input
+        id="backupFile"
+        class="visually-hidden"
+        type="file"
+        accept="application/json"
+        (change)="importBackup($event)"
+      />
+    </article>
+    <article class="settings-panel danger">
+      <h2>Device data</h2>
+      <p>All workout history and notes are stored only on this device.</p>
+      <button type="button" (click)="clear()">Clear Local Data</button>
+    </article>
+  </section>
+}
+
+@if (message) {
+  <p class="toast">{{ message }}</p>
+}

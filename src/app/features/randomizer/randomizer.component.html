@@ -1,0 +1,51 @@
+<section class="page-heading compact">
+  <p class="eyebrow">Randomizer</p>
+  <h1>Your three workout choices</h1>
+  @if (selectedPlanCount) {
+    <p>Picked from {{ selectedPlanCount }} selected plan(s).</p>
+  }
+</section>
+
+@if (!loading && selectedPlanCount === 0) {
+  <section class="empty-state">
+    <h2>No plans selected</h2>
+    <p>Choose at least one workout plan before randomizing.</p>
+    <a class="primary as-link" routerLink="/plans">Choose Plans</a>
+  </section>
+}
+
+@if (!loading && options.length) {
+  <section class="workout-options">
+    @for (workout of options; track workout) {
+      <article class="workout-card">
+        <p class="eyebrow">{{ workout.planName }}</p>
+        <h2>{{ workout.title }}</h2>
+        <p class="pill">{{ workout.category }}</p>
+        <p>{{ workout.description }}</p>
+        <ol class="exercise-list">
+          @for (exercise of workout.exercises; track exercise) {
+            <li>
+              <strong>{{ exercise.name }}</strong>
+              <span>{{ exercise.target }}</span>
+              <p>{{ exercise.instruction }}</p>
+            </li>
+          }
+        </ol>
+        <button
+          class="primary workout-button"
+          type="button"
+          (click)="choose(workout)"
+        >
+          Start This Workout
+        </button>
+      </article>
+    }
+  </section>
+}
+
+@if (selectedPlanCount) {
+  <div class="action-bar">
+    <a routerLink="/plans">Change plans</a>
+    <button type="button" (click)="randomize()">Randomize Again</button>
+  </div>
+}

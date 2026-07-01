@@ -1,0 +1,44 @@
+<header class="app-shell__header">
+  <a class="brand" routerLink="/plans" aria-label="Five-Minute Workout home">
+    <span class="brand__mark">5</span>
+    <span>Five-Minute Workout</span>
+  </a>
+
+  <nav class="top-nav" aria-label="Main navigation">
+    <a routerLink="/plans" routerLinkActive="active">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M5 4h14v2H5zm0 7h14v2H5zm0 7h14v2H5z" />
+      </svg>
+      <span>Plans</span>
+    </a>
+
+    <a routerLink="/randomizer" routerLinkActive="active">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          d="M4 7h4l2 3-2 3H4l-2-3zm12 0h4l2 3-2 3h-4l-2-3zM10 14h4v4h-4z"
+        />
+      </svg>
+      <span>Randomizer</span>
+    </a>
+
+    <a routerLink="/metrics" routerLinkActive="active">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M5 19V9h3v10zm5 0V5h3v14zm5 0v-7h3v7z" />
+      </svg>
+      <span>Metrics</span>
+    </a>
+
+    <a routerLink="/settings" routerLinkActive="active">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          d="M19.4 13a7.9 7.9 0 0 0 .1-1 7.9 7.9 0 0 0-.1-1l2.1-1.6-2-3.5-2.5 1a8.8 8.8 0 0 0-1.7-1l-.4-2.7h-4l-.4 2.7a8.8 8.8 0 0 0-1.7 1l-2.5-1-2 3.5L4.6 11a7.9 7.9 0 0 0-.1 1 7.9 7.9 0 0 0 .1 1l-2.1 1.6 2 3.5 2.5-1a8.8 8.8 0 0 0 1.7 1l.4 2.7h4l.4-2.7a8.8 8.8 0 0 0 1.7-1l2.5 1 2-3.5zM12 15.5A3.5 3.5 0 1 1 12 8a3.5 3.5 0 0 1 0 7.5"
+        />
+      </svg>
+      <span>Settings</span>
+    </a>
+  </nav>
+</header>
+
+<main class="app-shell__main">
+  <router-outlet />
+</main>

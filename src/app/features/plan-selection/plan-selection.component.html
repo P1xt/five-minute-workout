@@ -1,0 +1,42 @@
+<section class="page-heading">
+  <p class="eyebrow">Local-only offline workout app</p>
+  <h1>Choose your workout plans</h1>
+  <p>
+    Select one or more plans, then randomize three five-minute workout choices.
+  </p>
+</section>
+
+@if (loading) {
+  <p class="muted">Loading workout catalog...</p>
+}
+
+@if (!loading) {
+  <section class="plan-grid">
+    @for (plan of plans; track plan) {
+      <button
+        type="button"
+        class="plan-card"
+        [class.selected]="isSelected(plan.id)"
+        (click)="toggle(plan.id)"
+        [attr.aria-pressed]="isSelected(plan.id)"
+      >
+        <span class="check">{{ isSelected(plan.id) ? "✓" : "+" }}</span>
+        <span class="plan-card__name">{{ plan.name }}</span>
+        <span class="plan-card__meta">{{ plan.workouts.length }} workouts</span>
+        <span class="plan-card__description">{{ plan.description }}</span>
+      </button>
+    }
+  </section>
+}
+
+<div class="action-bar">
+  <span>{{ selected.size }} selected</span>
+  <button
+    class="primary"
+    type="button"
+    [disabled]="selected.size === 0"
+    (click)="continue()"
+  >
+    Randomize
+  </button>
+</div>
