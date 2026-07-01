@@ -1,3 +1,4 @@
+import { LocationStrategy } from "@angular/common";
 import { HttpClient } from "@angular/common/http";
 import { Injectable, inject } from "@angular/core";
 import { firstValueFrom } from "rxjs";
@@ -11,6 +12,7 @@ import {
 @Injectable({ providedIn: "root" })
 export class WorkoutCatalogService {
   private readonly http = inject(HttpClient);
+  private readonly locationStrategy = inject(LocationStrategy);
 
   private catalogPromise?: Promise<WorkoutCatalog>;
 
@@ -50,8 +52,13 @@ export class WorkoutCatalogService {
   }
 
   private load(): Promise<WorkoutCatalog> {
+    // Dynamically prepare the asset path based on the application's base href
+    const baseHref = this.locationStrategy.getBaseHref();
+    const safeBase = baseHref.endsWith("/") ? baseHref : `${baseHref}/`;
+    const fullPath = `${safeBase}assets/workout_plans_updated.json`.replace(/([^:]\/)\/+/g, "$1");
+
     this.catalogPromise ??= firstValueFrom(
-      this.http.get<WorkoutCatalog>("assets/workout_plans_updated.json"),
+      this.http.get<WorkoutCatalog>(fullPath),
     );
     return this.catalogPromise;
   }
