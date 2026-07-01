@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1782881258189,
+  "timestamp": 1782881954021,
   "index": "https://p1xt.github.io/five-minute-workout/index.html",
   "assetGroups": [
     {
@@ -46,7 +46,7 @@
   "dataGroups": [],
   "hashTable": {
     "https://p1xt.github.io/five-minute-workout/assets/icon.svg": "c859561c337f7ca5b28ac027839d6e5c6db5cd37",
-    "https://p1xt.github.io/five-minute-workout/assets/workout_plans_updated.json": "f47a945d42453837d8c40fced0ed3acbb5134842",
+    "https://p1xt.github.io/five-minute-workout/assets/workout_plans_updated.json": "41149cb5b584fd092644017bea46163a8f2a8b39",
     "https://p1xt.github.io/five-minute-workout/chunk-A6CBNQS5.js": "171f0f642404b312eb4ee349e0f84fa0b9b0ffdd",
     "https://p1xt.github.io/five-minute-workout/chunk-ANLVEE2M.js": "4698f2fcd66603ef03d4170ffc397bce97317d1d",
     "https://p1xt.github.io/five-minute-workout/chunk-C2KDXH5N.js": "ff4c7a9c9f438f02a5de1f8f46569d021d5c1129",
