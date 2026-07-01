@@ -38,6 +38,7 @@ export class PlanSelectionComponent implements OnInit {
     } else {
       this.selected.add(planId);
     }
+    this.settings.setSelectedPlanIds([...this.selected])
   }
 
   async continue(): Promise<void> {
