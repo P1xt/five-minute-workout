@@ -51,7 +51,7 @@ export class WorkoutCatalogService {
 
   private load(): Promise<WorkoutCatalog> {
     this.catalogPromise ??= firstValueFrom(
-      this.http.get<WorkoutCatalog>("/assets/workout_plans_updated.json"),
+      this.http.get<WorkoutCatalog>("assets/workout_plans_updated.json"),
     );
     return this.catalogPromise;
   }
