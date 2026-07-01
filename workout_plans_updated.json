@@ -6944,7 +6944,7 @@
     },
     {
       "id": "micro_movement_card_program",
-      "name": "Five-Minute Random Movement Deck (Fully Constraint-Aligned Edition)",
+      "name": "Five-Minute Random Movement Deck",
       "description": "A portable system of single-activity five-minute movement cards designed for flat-ground environments with optional light equipment only (dumbbells or stationary bike). Emphasizes variability across locomotion, primal movement, light strength, rhythm, mobility, and nervous system regulation. No infrastructure dependencies. Each card is one uninterrupted 5-minute activity.",
       "workouts": [
         {
