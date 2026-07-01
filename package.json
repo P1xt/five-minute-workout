@@ -12,6 +12,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "e2e": "playwright test",
+    "deploy": "ng deploy --base-href=\"https://p1xt.github.io/five-minute-workout/\"",
     "preview:pwa": "ng build && npx http-server dist/five-minute-workout/browser -p 4200"
   },
   "dependencies": {
