@@ -30,3 +30,7 @@ npm run build
 ```
 
 For installable/offline PWA behavior, run a production build and serve the built output over HTTP.
+
+## Development
+
+This is an Angular PWA vibe coded with Codex. Well, most of it is, after Codex was done, I went in added linting and prettier and tweaked some style changes I still wanted when I ran out of Codex credits.
