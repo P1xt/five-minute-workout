@@ -1,0 +1,85 @@
+{
+  "configVersion": 1,
+  "timestamp": 1782879477695,
+  "index": "https://p1xt.github.io/five-minute-workout/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://p1xt.github.io/five-minute-workout/chunk-HDI3YMFT.js",
+        "https://p1xt.github.io/five-minute-workout/chunk-HU34H27G.js",
+        "https://p1xt.github.io/five-minute-workout/chunk-HX6RVVVW.js",
+        "https://p1xt.github.io/five-minute-workout/chunk-IVG2GFYJ.js",
+        "https://p1xt.github.io/five-minute-workout/chunk-LHJG5ZPS.js",
+        "https://p1xt.github.io/five-minute-workout/chunk-PCVOKSCA.js",
+        "https://p1xt.github.io/five-minute-workout/chunk-SMWKIARX.js",
+        "https://p1xt.github.io/five-minute-workout/chunk-TDGJEC7I.js",
+        "https://p1xt.github.io/five-minute-workout/chunk-UQPEVNAR.js",
+        "https://p1xt.github.io/five-minute-workout/chunk-VC6BBHZC.js",
+        "https://p1xt.github.io/five-minute-workout/index.html",
+        "https://p1xt.github.io/five-minute-workout/main-W72KEPWE.js",
+        "https://p1xt.github.io/five-minute-workout/manifest.webmanifest",
+        "https://p1xt.github.io/five-minute-workout/polyfills-5CFQRCPP.js",
+        "https://p1xt.github.io/five-minute-workout/styles-HAQXODW2.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://p1xt.github.io/five-minute-workout/assets/icon.svg",
+        "https://p1xt.github.io/five-minute-workout/assets/workout_plans_updated.json"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://p1xt.github.io/five-minute-workout/assets/icon.svg": "c859561c337f7ca5b28ac027839d6e5c6db5cd37",
+    "https://p1xt.github.io/five-minute-workout/assets/workout_plans_updated.json": "f47a945d42453837d8c40fced0ed3acbb5134842",
+    "https://p1xt.github.io/five-minute-workout/chunk-HDI3YMFT.js": "81020565c6418d578b6a973c8715297e326de6f0",
+    "https://p1xt.github.io/five-minute-workout/chunk-HU34H27G.js": "5eb4401c6dc80d6f0788d1c8b5421c29e4777deb",
+    "https://p1xt.github.io/five-minute-workout/chunk-HX6RVVVW.js": "abc414525e8c21b62b908a43a524a377edb151d6",
+    "https://p1xt.github.io/five-minute-workout/chunk-IVG2GFYJ.js": "ab423c2fc38838df11a1477f538b987851b1bd2e",
+    "https://p1xt.github.io/five-minute-workout/chunk-LHJG5ZPS.js": "575a4aeea1d6be4ad2316526dc1478a03d5a6f7c",
+    "https://p1xt.github.io/five-minute-workout/chunk-PCVOKSCA.js": "9a99e460966445544edff004f8685f1fc5aa4fc7",
+    "https://p1xt.github.io/five-minute-workout/chunk-SMWKIARX.js": "fe9daf78248c8d1570305e478acd910ed391c090",
+    "https://p1xt.github.io/five-minute-workout/chunk-TDGJEC7I.js": "78274a64ffef0addff442f1cc0350edafc57e795",
+    "https://p1xt.github.io/five-minute-workout/chunk-UQPEVNAR.js": "75cbcf1150973509f1077b2aa5eb1e39d3f43b38",
+    "https://p1xt.github.io/five-minute-workout/chunk-VC6BBHZC.js": "c13feb6b82829230bc72d6a1f0cfb67efce84861",
+    "https://p1xt.github.io/five-minute-workout/index.html": "4fbb449bb3bae0a437a4355c1e6417f7de33c103",
+    "https://p1xt.github.io/five-minute-workout/main-W72KEPWE.js": "29623a18756864d84df030a85a604a996373d6af",
+    "https://p1xt.github.io/five-minute-workout/manifest.webmanifest": "06aea7d454bae4a9ba2580d1039d5dbaa1674a7b",
+    "https://p1xt.github.io/five-minute-workout/polyfills-5CFQRCPP.js": "f2241e9a25858f895ce299d15f6f22e849e2fd72",
+    "https://p1xt.github.io/five-minute-workout/styles-HAQXODW2.css": "931c6b4745894aeb7558c14de1800e4e33e50a67"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
